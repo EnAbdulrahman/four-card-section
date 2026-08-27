@@ -13,9 +13,11 @@
   --Grey-400: hsl(212, 6%, 44%);
   --Grey-500: hsl(234, 12%, 34%);
 }
+
 body {
-  padding: 20px;
+  padding: 24px;
 }
+
 main {
   display: flex;
   flex-direction: column;
@@ -23,5 +25,28 @@ main {
   margin: 80px auto;
   align-items: center;
   gap: 50px;
+}
+
+.title-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.cards-parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.group-of-cards {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
 }
 
